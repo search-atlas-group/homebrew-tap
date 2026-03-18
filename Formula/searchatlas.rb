@@ -5,21 +5,21 @@
 class Searchatlas < Formula
   desc "CLI for the SearchAtlas AI search and online visibility platform"
   homepage "https://github.com/Search-Atlas-Group/searchatlas-cli"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.7/searchatlas_0.1.7_darwin_amd64.tar.gz"
-      sha256 "e7e876994c3724f44be321a1564308693b9da6f749b3a3fb57d9882429c1c000"
+      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.8/searchatlas_0.1.8_darwin_amd64.tar.gz"
+      sha256 "336c02ea642fb0790b02708219ae2c756607dbcc00c2b962dc98aa6dabdb1295"
 
       define_method(:install) do
         bin.install "searchatlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.7/searchatlas_0.1.7_darwin_arm64.tar.gz"
-      sha256 "aa0344d6b9f10e00e9f2dd229c1d6693d23d01e7f89f01f012396c7bed8a9258"
+      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.8/searchatlas_0.1.8_darwin_arm64.tar.gz"
+      sha256 "3e1dab74355943f90b43e4a1e9f9616c244861144d28c2203e221202010952c9"
 
       define_method(:install) do
         bin.install "searchatlas"
@@ -29,15 +29,15 @@ class Searchatlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.7/searchatlas_0.1.7_linux_amd64.tar.gz"
-      sha256 "df8e37df801ea7411fe610764f50128c085ed97b7426ad6ed842055b25ce3fc0"
+      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.8/searchatlas_0.1.8_linux_amd64.tar.gz"
+      sha256 "e97c1ef138e610ea0a5c1cd857e717a067c24ebb5737a015d9790e2c568428bc"
       define_method(:install) do
         bin.install "searchatlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.7/searchatlas_0.1.7_linux_arm64.tar.gz"
-      sha256 "128e6eb84f4bf9508d1297e3395bfa96f361f80c3027db2a7488c7ab193cfe25"
+      url "https://github.com/Search-Atlas-Group/searchatlas-cli/releases/download/v0.1.8/searchatlas_0.1.8_linux_arm64.tar.gz"
+      sha256 "4efb077aa6d75adb4a5dea4aea4ceae3cd82f6911305f3a518de6b74dda92b3e"
       define_method(:install) do
         bin.install "searchatlas"
       end
